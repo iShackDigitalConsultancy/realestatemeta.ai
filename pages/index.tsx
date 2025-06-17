@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="relative min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50 pt-32 pb-20 px-6 text-center overflow-hidden">
+      <main className="relative min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50 pt-40 pb-20 px-6 text-center overflow-hidden">
         {/* Sophisticated background patterns */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50 opacity-90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-100/20 via-transparent to-transparent" />

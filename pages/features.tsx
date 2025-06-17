@@ -188,13 +188,15 @@ export default function Features() {
       <header className="fixed w-full z-50 bg-white/95 border-b border-gray-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
           <div className="flex items-center gap-12">
-            <Image
-              src="/logo.png"
-              alt="RealEstateMeta.ai logo"
-              width={128}
-              height={32}
-              className="h-32 w-auto transition-transform hover:scale-105"
-            />
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                alt="RealEstateMeta.ai logo"
+                width={128}
+                height={32}
+                className="h-32 w-auto transition-transform hover:scale-105"
+              />
+            </Link>
 
             <nav className="hidden md:flex gap-10 text-gray-600 text-base font-medium">
               <Link href="/features" className="text-blue-600 font-semibold">Features</Link>

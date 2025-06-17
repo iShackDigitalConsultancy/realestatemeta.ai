@@ -44,7 +44,7 @@ export default function Investors() {
       </header>
 
       {/* Main Content */}
-      <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50 pt-32 pb-20 px-6">
+      <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50 pt-40 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-20">
