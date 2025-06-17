@@ -33,14 +33,14 @@ export default function Home() {
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-6">
           <div className="max-w-7xl mx-auto text-center">
-            {/* Octopus image */}
+            {/* Large Logo */}
             <div className="mb-12">
               <Image
-                src="/octopus-brain.webp"
-                alt="AI Octopus Brain Illustration"
-                width={288}
-                height={288}
-                className="mx-auto w-48 md:w-64 lg:w-72"
+                src="/logo.png"
+                alt="RealEstateMeta.ai logo"
+                width={512}
+                height={128}
+                className="mx-auto w-64 md:w-96 lg:w-[512px]"
                 unoptimized
               />
             </div>
