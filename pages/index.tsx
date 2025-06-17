@@ -1,80 +1,43 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
       <Head>
-        <title>RealEstateMeta.ai - AI-Powered Real Estate Intelligence</title>
-        <meta name="description" content="Transform your real estate data into actionable insights with AI-powered intelligence." />
+        <title>RealEstateMeta.ai</title>
+        <meta name="description" content="AI-Powered Real Estate Intelligence" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-white">
-        {/* Header */}
-        <header className="fixed w-full bg-white shadow-sm z-50">
-          <div className="max-w-7xl mx-auto px-6 py-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="relative">
-                <Image
-                  src="/logo.png"
-                  alt="RealEstateMeta.ai logo"
-                  width={256}
-                  height={64}
-                  className="h-16 w-auto"
-                  unoptimized
-                />
-              </Link>
-            </div>
-          </div>
-        </header>
+      <main className="text-center max-w-3xl">
+        <div className="mb-12">
+          <Image
+            src="/logo.png"
+            alt="RealEstateMeta.ai"
+            width={400}
+            height={100}
+            className="w-[400px]"
+          />
+        </div>
 
-        {/* Hero Section */}
-        <section className="pt-32 pb-20 px-6">
-          <div className="max-w-7xl mx-auto text-center">
-            {/* Large Logo */}
-            <div className="mb-12">
-              <Image
-                src="/logo.png"
-                alt="RealEstateMeta.ai logo"
-                width={512}
-                height={128}
-                className="mx-auto w-64 md:w-96 lg:w-[512px]"
-                unoptimized
-              />
-            </div>
+        <h1 className="text-4xl font-bold text-gray-900 mb-6">
+          AI-Powered Clarity for Real Estate
+        </h1>
+        
+        <p className="text-xl text-gray-600 mb-12">
+          Most real estate companies have data scattered across spreadsheets, inboxes, and siloed systems. Our intelligent "octopus" tentacles connect everything — leases, assets, operations — and feed it all into a unified AI brain.
+        </p>
 
-            {/* Main content */}
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              AI-Powered Clarity for Real Estate
-            </h1>
-            
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
-              Most real estate companies have data scattered across spreadsheets, inboxes, and siloed systems. Our intelligent "octopus" tentacles connect everything — leases, assets, operations — and feed it all into a unified AI brain.
-            </p>
-
-            {/* CTA Button */}
-            <a 
-              href="https://zcal.co/wayne-berger"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 text-lg font-medium shadow-lg"
-            >
-              Book a Demo
-            </a>
-          </div>
-        </section>
-
-        {/* Footer */}
-        <footer className="bg-white border-t border-gray-100 py-8">
-          <div className="max-w-7xl mx-auto px-6 text-center">
-            <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} RealEstateMeta.ai. All rights reserved.
-            </p>
-          </div>
-        </footer>
+        <a 
+          href="https://zcal.co/wayne-berger"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium"
+        >
+          Book a Demo
+        </a>
       </main>
-    </>
+    </div>
   )
 }
