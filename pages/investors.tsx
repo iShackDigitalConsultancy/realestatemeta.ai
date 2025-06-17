@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Investors() {
   return (
@@ -13,18 +15,20 @@ export default function Investors() {
       <header className="fixed w-full z-50 backdrop-blur-sm bg-white/80 border-b border-gray-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-12">
-            <a href="/">
-              <img
+            <Link href="/">
+              <Image
                 src="/logo.png"
                 alt="RealEstateMeta.ai logo"
-                className="h-24 w-auto transition-transform hover:scale-105"
+                width={128}
+                height={32}
+                className="h-32 w-auto transition-transform hover:scale-105"
               />
-            </a>
+            </Link>
 
             <nav className="hidden md:flex gap-10 text-gray-600 text-base font-medium">
-              <a href="/#features" className="hover:text-blue-600 transition-colors">Features</a>
-              <a href="/#pricing" className="hover:text-blue-600 transition-colors">Pricing</a>
-              <a href="/investors" className="hover:text-blue-600 text-blue-600 font-semibold">Investors</a>
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <Link href="/" className="hover:text-blue-600 transition-colors">About</Link>
+              <Link href="/investors" className="text-blue-600 font-semibold">Investors</Link>
             </nav>
           </div>
 
@@ -47,8 +51,8 @@ export default function Investors() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fadeInUp">
               Invest in the Future of Real Estate AI
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 animate-fadeInUp delay-100">
-              RealEstateMeta.ai connects fragmented property data through intelligent AI tentacles and gives real-time insights to landlords, brokers, and occupiers — turning chaos into clarity.
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              We&apos;re looking for strategic partners who share our vision for transforming real estate through AI.
             </p>
           </div>
 
@@ -72,7 +76,7 @@ export default function Investors() {
               <div className="text-4xl mb-4">📈</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Global Expansion</h3>
               <p className="text-gray-600">
-                We've already onboarded clients in South Africa, with global expansion planned into the UK and US.
+                We&apos;ve already onboarded clients in South Africa, with global expansion planned into the UK and US.
               </p>
             </div>
           </div>

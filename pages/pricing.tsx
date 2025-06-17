@@ -1,26 +1,32 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Pricing() {
   return (
     <>
       <Head>
         <title>Pricing - RealEstateMeta.ai</title>
-        <meta name="description" content="Simple, transparent pricing for RealEstateMeta.ai's AI-powered real estate intelligence platform" />
+        <meta name="description" content="Simple, transparent pricing for RealEstateMeta.ai&apos;s AI-powered real estate intelligence platform" />
       </Head>
 
       <header className="fixed w-full z-50 bg-white/95 border-b border-gray-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
           <div className="flex items-center gap-12">
-            <img
-              src="/logo.png"
-              alt="RealEstateMeta.ai logo"
-              className="h-32 w-auto transition-transform hover:scale-105"
-            />
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                alt="RealEstateMeta.ai logo"
+                width={128}
+                height={32}
+                className="h-32 w-auto transition-transform hover:scale-105"
+              />
+            </Link>
 
             <nav className="hidden md:flex gap-10 text-gray-600 text-base font-medium">
-              <a href="/#features" className="hover:text-blue-600 transition-colors">Features</a>
-              <a href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</a>
-              <a href="/investors" className="hover:text-blue-600 transition-colors">Investors</a>
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <Link href="/pricing" className="text-blue-600 font-semibold">Pricing</Link>
+              <Link href="/investors" className="hover:text-blue-600 transition-colors">Investors</Link>
             </nav>
           </div>
 
@@ -42,8 +48,8 @@ export default function Pricing() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Simple, Transparent Pricing
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Start with a 14-day free trial. No credit card required. All plans include our core AI features.
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              We&apos;re committed to providing transparent pricing with no hidden fees.
             </p>
           </div>
 
@@ -273,7 +279,7 @@ export default function Pricing() {
             <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold mb-2">What's included in the free trial?</h3>
+                <h3 className="text-lg font-semibold mb-2">What&apos;s included in the free trial?</h3>
                 <p className="text-gray-600">The 14-day free trial includes access to all features of the plan you choose. No credit card required to start.</p>
               </div>
               <div>

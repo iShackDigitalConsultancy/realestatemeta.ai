@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { ReactElement } from 'react'
 
@@ -185,16 +187,18 @@ export default function Features() {
       <header className="fixed w-full z-50 bg-white/95 border-b border-gray-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
           <div className="flex items-center gap-12">
-            <img
+            <Image
               src="/logo.png"
               alt="RealEstateMeta.ai logo"
+              width={128}
+              height={32}
               className="h-32 w-auto transition-transform hover:scale-105"
             />
 
             <nav className="hidden md:flex gap-10 text-gray-600 text-base font-medium">
-              <a href="/features" className="text-blue-600 font-semibold">Features</a>
-              <a href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</a>
-              <a href="/investors" className="hover:text-blue-600 transition-colors">Investors</a>
+              <Link href="/features" className="text-blue-600 font-semibold">Features</Link>
+              <Link href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</Link>
+              <Link href="/investors" className="hover:text-blue-600 transition-colors">Investors</Link>
             </nav>
           </div>
 
@@ -286,12 +290,12 @@ export default function Features() {
               >
                 Start Free Trial
               </a>
-              <a
+              <Link
                 href="/pricing"
                 className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 text-lg font-medium hover:scale-105"
               >
                 View Pricing
-              </a>
+              </Link>
             </div>
           </div>
         </div>

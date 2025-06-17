@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 import FeaturesSection from '../components/FeaturesSection'
 import OctopusSection from '@/components/OctopusSection'
 
@@ -14,16 +16,18 @@ export default function Home() {
       <header className="fixed w-full z-50 backdrop-blur-sm bg-white/80 border-b border-gray-100">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-12">
-            <img
+            <Image
               src="/logo.png"
               alt="RealEstateMeta.ai logo"
+              width={128}
+              height={32}
               className="h-32 w-auto transition-transform hover:scale-105"
             />
 
             <nav className="hidden md:flex gap-10 text-gray-600 text-base font-medium">
-              <a href="/features" className="hover:text-blue-600 transition-colors">Features</a>
-              <a href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</a>
-              <a href="/investors" className="hover:text-blue-600 transition-colors">Investors</a>
+              <Link href="/features" className="hover:text-blue-600 transition-colors">Features</Link>
+              <Link href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</Link>
+              <Link href="/investors" className="hover:text-blue-600 transition-colors">Investors</Link>
             </nav>
           </div>
 
@@ -54,9 +58,11 @@ export default function Home() {
           {/* Octopus image with enhanced styling */}
           <div className="relative mb-12">
             <div className="absolute inset-0 bg-gradient-to-b from-blue-100/50 to-transparent blur-2xl" />
-            <img
+            <Image
               src="/octopus-brain.webp"
               alt="AI Octopus Brain Illustration"
+              width={288}
+              height={288}
               className="relative mx-auto w-48 md:w-64 lg:w-72 animate-float drop-shadow-2xl hover:drop-shadow-3xl transition-all duration-300"
             />
             
