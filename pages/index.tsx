@@ -11,9 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50">
+      <main className="min-h-screen bg-white">
         {/* Header */}
-        <header className="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
+        <header className="fixed w-full bg-white shadow-sm z-50">
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="relative">
@@ -34,13 +34,13 @@ export default function Home() {
         <section className="pt-32 pb-20 px-6">
           <div className="max-w-7xl mx-auto text-center">
             {/* Octopus image */}
-            <div className="relative mb-12">
+            <div className="mb-12">
               <Image
                 src="/octopus-brain.webp"
                 alt="AI Octopus Brain Illustration"
                 width={288}
                 height={288}
-                className="relative mx-auto w-48 md:w-64 lg:w-72 animate-float"
+                className="mx-auto w-48 md:w-64 lg:w-72"
                 priority
               />
             </div>
@@ -59,7 +59,7 @@ export default function Home() {
               href="https://zcal.co/wayne-berger"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-200 text-lg font-medium shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 text-lg font-medium shadow-lg"
             >
               Book a Demo
             </a>
