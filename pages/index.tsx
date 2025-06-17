@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+// Force new deployment
 export default function Home() {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center">
