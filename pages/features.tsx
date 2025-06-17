@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { ReactElement } from 'react'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 interface FeatureDetail {
   title: string
@@ -182,127 +184,94 @@ export default function Features() {
     <>
       <Head>
         <title>Features - RealEstateMeta.ai</title>
-        <meta name="description" content="Discover the powerful features of RealEstateMeta.ai's AI-powered real estate intelligence platform" />
+        <meta name="description" content="Discover how RealEstateMeta.ai&apos;s AI-powered features transform your real estate data into actionable insights" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="fixed w-full z-50 bg-white/95 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-          <div className="flex items-center gap-12">
-            <Link href="/">
-              <Image
-                src="/logo.png"
-                alt="RealEstateMeta.ai logo"
-                width={128}
-                height={32}
-                className="h-32 w-auto transition-transform hover:scale-105"
-              />
-            </Link>
+      <Header />
 
-            <nav className="hidden md:flex gap-10 text-gray-600 text-base font-medium">
-              <Link href="/features" className="text-blue-600 font-semibold">Features</Link>
-              <Link href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</Link>
-              <Link href="/investors" className="hover:text-blue-600 transition-colors">Investors</Link>
-            </nav>
-          </div>
-
-          <a
-            href="https://zcal.co/wayne-berger"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all duration-200 text-base font-medium shadow-sm hover:shadow-md"
-          >
-            Book a Demo
-          </a>
-        </div>
-      </header>
-
-      <main className="pt-40 pb-20 px-6">
+      <main className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
-          {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Powerful Features for Real Estate Intelligence
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover how our AI-powered platform transforms your real estate data into actionable insights and comprehensive reports
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our AI-powered platform brings together all your real estate data into one intelligent system.
             </p>
           </div>
 
-          {/* Feature Tabs */}
-          <div className="mb-12">
-            <div className="flex flex-wrap justify-center gap-4">
-              {Object.keys(features).map((key) => (
-                <button
-                  key={key}
-                  onClick={() => setActiveTab(key)}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
-                    activeTab === key
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                  }`}
-                >
-                  {features[key].title}
-                </button>
-              ))}
+          {/* Feature Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Data Integration</h3>
+              <p className="text-gray-600">
+                Connect all your real estate data sources into one unified platform. Our AI automatically organizes and structures your data.
+              </p>
             </div>
-          </div>
 
-          {/* Active Feature Content */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-16">
-            <div className="flex items-start gap-8">
-              <div className="flex-shrink-0">
-                {features[activeTab].icon}
+            {/* Feature 2 */}
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
               </div>
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  {features[activeTab].title}
-                </h2>
-                <p className="text-xl text-gray-600 mb-8">
-                  {features[activeTab].description}
-                </p>
-                <div className="grid md:grid-cols-2 gap-8">
-                  {features[activeTab].details.map((detail: FeatureDetail, index: number) => (
-                    <div key={index} className="bg-gray-50 rounded-xl p-6">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                        {detail.title}
-                      </h3>
-                      <p className="text-gray-600">
-                        {detail.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Advanced Analytics</h3>
+              <p className="text-gray-600">
+                Get deep insights into your real estate portfolio with our AI-powered analytics and predictive modeling.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
               </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Customizable Workflows</h3>
+              <p className="text-gray-600">
+                Create custom workflows and automation rules to streamline your real estate operations.
+              </p>
             </div>
           </div>
 
           {/* CTA Section */}
-          <div className="text-center">
+          <div className="mt-20 text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Ready to Experience the Power of AI?
+              Ready to Transform Your Real Estate Data?
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Start your 14-day free trial today and see how RealEstateMeta.ai can transform your real estate business with powerful data analysis and reporting capabilities.
+              Join leading real estate companies who are already using RealEstateMeta.ai to make better decisions.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href="https://zcal.co/wayne-berger"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-200 text-lg font-medium shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                Start Free Trial
-              </a>
-              <Link
+              <Link 
                 href="/pricing"
-                className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 text-lg font-medium hover:scale-105"
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-200 text-lg font-medium shadow-lg hover:shadow-xl hover:scale-105"
               >
                 View Pricing
               </Link>
+              <a 
+                href="https://zcal.co/wayne-berger"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 text-lg font-medium hover:scale-105"
+              >
+                Book a Demo
+              </a>
             </div>
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   )
 } 

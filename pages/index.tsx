@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import FeaturesSection from '../components/FeaturesSection'
 import OctopusSection from '@/components/OctopusSection'
 
@@ -13,36 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="fixed w-full z-50 backdrop-blur-sm bg-white/80 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-12">
-            <Image
-              src="/logo.png"
-              alt="RealEstateMeta.ai logo"
-              width={128}
-              height={32}
-              className="h-32 w-auto transition-transform hover:scale-105"
-            />
+      <Header />
 
-            <nav className="hidden md:flex gap-10 text-gray-600 text-base font-medium">
-              <Link href="/features" className="hover:text-blue-600 transition-colors">Features</Link>
-              <Link href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</Link>
-              <Link href="/investors" className="hover:text-blue-600 transition-colors">Investors</Link>
-            </nav>
-          </div>
-
-          <a
-            href="https://zcal.co/wayne-berger"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all duration-200 text-base font-medium shadow-sm hover:shadow-md"
-          >
-            Book a Demo
-          </a>
-        </div>
-      </header>
-
-      <main className="relative min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50 pt-40 pb-20 px-6 text-center overflow-hidden">
+      <main className="relative min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50 pt-32 pb-20 px-6 text-center overflow-hidden">
         {/* Sophisticated background patterns */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50 opacity-90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-100/20 via-transparent to-transparent" />
@@ -150,6 +125,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 }
