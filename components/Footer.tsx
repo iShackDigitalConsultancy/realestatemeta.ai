@@ -3,29 +3,29 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
-            <Link href="/" className="inline-block">
+          <div className="col-span-1 md:col-span-2">
+            <Link href="/" className="inline-block mb-6">
               <Image
                 src="/logo.png"
-                alt="RealEstateMeta.ai logo"
-                width={128}
-                height={32}
-                className="h-8 w-auto"
+                alt="RealEstateMeta.ai Logo"
+                width={180}
+                height={40}
+                className="h-10 w-auto"
               />
             </Link>
-            <p className="text-sm">
-              Transforming real estate data into actionable insights with AI-powered intelligence.
+            <p className="text-gray-600 mb-6 max-w-md">
+              RealEstateMeta.ai is revolutionizing real estate investment with AI-powered insights and predictive analytics.
             </p>
             <div className="flex space-x-4">
               <a
                 href="https://twitter.com/realestatemeta"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">Twitter</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -36,7 +36,7 @@ export default function Footer() {
                 href="https://linkedin.com/company/realestatemeta"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">LinkedIn</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -48,65 +48,38 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">
+              Quick Links
+            </h3>
+            <ul className="space-y-4">
               <li>
-                <Link href="/features" className="hover:text-white transition-colors">
+                <Link href="/features" className="text-gray-600 hover:text-gray-900">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="hover:text-white transition-colors">
+                <Link href="/pricing" className="text-gray-600 hover:text-gray-900">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/investors" className="hover:text-white transition-colors">
+                <Link href="/investors" className="text-gray-600 hover:text-gray-900">
                   Investors
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors"
-                >
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors"
-                >
-                  API Reference
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">
+              Contact
+            </h3>
+            <ul className="space-y-4">
               <li>
                 <a
                   href="mailto:contact@realestatemeta.ai"
-                  className="hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-gray-900"
                 >
                   contact@realestatemeta.ai
                 </a>
@@ -116,17 +89,19 @@ export default function Footer() {
                   href="https://zcal.co/wayne-berger"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="text-gray-600 hover:text-gray-900"
                 >
-                  Book a Demo
+                  Schedule a Demo
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
-          <p>&copy; {new Date().getFullYear()} RealEstateMeta.ai. All rights reserved.</p>
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <p className="text-gray-400 text-sm text-center">
+            &copy; {new Date().getFullYear()} RealEstateMeta.ai. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

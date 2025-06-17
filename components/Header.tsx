@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,6 +34,7 @@ export default function Header() {
             </Link>
 
             <nav className="hidden md:flex gap-10 text-gray-600 text-base font-medium">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
               <Link href="/features" className="hover:text-blue-600 transition-colors">Features</Link>
               <Link href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</Link>
               <Link href="/investors" className="hover:text-blue-600 transition-colors">Investors</Link>
@@ -89,6 +90,13 @@ export default function Header() {
           }`}
         >
           <nav className="flex flex-col gap-4 py-4">
+            <Link
+              href="/"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
             <Link
               href="/features"
               className="text-gray-600 hover:text-blue-600 transition-colors"
