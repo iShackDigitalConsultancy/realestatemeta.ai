@@ -184,7 +184,7 @@ export default function Features() {
     <>
       <Head>
         <title>Features - RealEstateMeta.ai</title>
-        <meta name="description" content="Discover how RealEstateMeta.ai&apos;s AI-powered features transform your real estate data into actionable insights" />
+        <meta name="description" content="Discover the powerful features of RealEstateMeta.ai&apos;s AI-powered real estate intelligence platform" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -194,78 +194,117 @@ export default function Features() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Powerful Features for Real Estate Intelligence
+              Powerful Features for Real Estate Professionals
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our AI-powered platform brings together all your real estate data into one intelligent system.
+              Our AI-powered platform combines cutting-edge technology with intuitive design to transform how you work with real estate data.
             </p>
           </div>
 
-          {/* Feature Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {/* Feature 1 */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Data Integration</h3>
+              <h3 className="text-xl font-semibold mb-2">AI Assistant</h3>
               <p className="text-gray-600">
-                Connect all your real estate data sources into one unified platform. Our AI automatically organizes and structures your data.
+                Get instant answers and insights from our AI assistant. Available 24/7 to help with market analysis, property comparisons, and investment opportunities.
               </p>
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Advanced Analytics</h3>
+              <h3 className="text-xl font-semibold mb-2">AI Dashboards</h3>
               <p className="text-gray-600">
-                Get deep insights into your real estate portfolio with our AI-powered analytics and predictive modeling.
+                Create custom AI-powered dashboards that automatically update with the latest market data, trends, and insights. Visualize your data in meaningful ways.
               </p>
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Customizable Workflows</h3>
+              <h3 className="text-xl font-semibold mb-2">Expert Reports</h3>
               <p className="text-gray-600">
-                Create custom workflows and automation rules to streamline your real estate operations.
+                Generate comprehensive reports powered by AI, including market analysis, property valuations, and investment recommendations. Save hours of manual research.
+              </p>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Real-time Analytics</h3>
+              <p className="text-gray-600">
+                Get instant access to real-time market data, trends, and analytics. Make informed decisions with up-to-the-minute information.
+              </p>
+            </div>
+
+            {/* Feature 5 */}
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Secure Data</h3>
+              <p className="text-gray-600">
+                Enterprise-grade security with end-to-end encryption. Your data is protected and compliant with industry standards.
+              </p>
+            </div>
+
+            {/* Feature 6 */}
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
+              <p className="text-gray-600">
+                Get help whenever you need it with our dedicated support team. Professional and Enterprise plans include priority support.
               </p>
             </div>
           </div>
 
           {/* CTA Section */}
-          <div className="mt-20 text-center">
+          <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Ready to Transform Your Real Estate Data?
+              Ready to Get Started?
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Join leading real estate companies who are already using RealEstateMeta.ai to make better decisions.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link 
-                href="/pricing"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-200 text-lg font-medium shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                View Pricing
-              </Link>
               <a 
                 href="https://zcal.co/wayne-berger"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-200 text-lg font-medium shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                Start Free Trial
+              </a>
+              <Link 
+                href="/pricing" 
                 className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 text-lg font-medium hover:scale-105"
               >
-                Book a Demo
-              </a>
+                View Pricing
+              </Link>
             </div>
           </div>
         </div>

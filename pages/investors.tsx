@@ -9,7 +9,7 @@ export default function Investors() {
     <>
       <Head>
         <title>Investors - RealEstateMeta.ai</title>
-        <meta name="description" content="Join RealEstateMeta.ai&apos;s journey in transforming real estate through AI. We&apos;re seeking strategic partners who share our vision." />
+        <meta name="description" content="Join RealEstateMeta.ai&apos;s mission to transform real estate through AI. We&apos;re looking for strategic partners who share our vision." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -19,9 +19,9 @@ export default function Investors() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Join Our Journey
+              Join Our Mission
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               We&apos;re looking for strategic partners who share our vision for transforming real estate through AI.
             </p>
           </div>
@@ -29,21 +29,38 @@ export default function Investors() {
           {/* Investment Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Market Opportunity</h3>
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Market Opportunity</h3>
               <p className="text-gray-600">
-                The real estate industry is ripe for AI transformation, with a market size exceeding $3 trillion.
+                The real estate industry is ripe for AI disruption. We&apos;re building the future of real estate intelligence.
               </p>
             </div>
+
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Proven Technology</h3>
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Proven Technology</h3>
               <p className="text-gray-600">
-                Our AI platform has already demonstrated significant value for early adopters in the industry.
+                Our AI platform is already delivering results for leading real estate companies.
               </p>
             </div>
+
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Strong Team</h3>
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Strong Team</h3>
               <p className="text-gray-600">
-                Led by experienced professionals in both real estate and artificial intelligence.
+                Experienced founders with deep expertise in AI, real estate, and technology.
               </p>
             </div>
           </div>
@@ -51,10 +68,10 @@ export default function Investors() {
           {/* Contact Section */}
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Interested in Investing?
+              Let&apos;s Build the Future Together
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Let&apos;s discuss how we can work together to revolutionize the real estate industry.
+              Schedule a meeting to learn more about our vision and investment opportunity.
             </p>
             <a 
               href="https://zcal.co/wayne-berger"

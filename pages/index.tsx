@@ -64,13 +64,13 @@ export default function Home() {
               Book a Demo
               <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none ml-2">→</span>
             </a>
-            <a 
+            <Link 
               href="#video" 
               className="group border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 text-lg font-medium hover:scale-105"
             >
               Watch Explainer
               <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none ml-2">→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </main>
@@ -116,12 +116,12 @@ export default function Home() {
             >
               Start Free Trial
             </a>
-            <a 
+            <Link 
               href="#contact" 
               className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 text-lg font-medium hover:scale-105"
             >
               Contact Sales
-            </a>
+            </Link>
           </div>
         </div>
       </section>
