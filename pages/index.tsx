@@ -23,7 +23,7 @@ export default function Home() {
                   width={256}
                   height={64}
                   className="h-16 w-auto"
-                  priority
+                  unoptimized
                 />
               </Link>
             </div>
@@ -41,7 +41,7 @@ export default function Home() {
                 width={288}
                 height={288}
                 className="mx-auto w-48 md:w-64 lg:w-72"
-                priority
+                unoptimized
               />
             </div>
 
