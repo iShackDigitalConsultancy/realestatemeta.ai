@@ -78,14 +78,6 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:contact@realestatemeta.ai"
-                  className="text-gray-600 hover:text-gray-900"
-                >
-                  contact@realestatemeta.ai
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://zcal.co/wayne-berger"
                   target="_blank"
                   rel="noopener noreferrer"

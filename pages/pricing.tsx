@@ -27,12 +27,22 @@ export default function Pricing() {
           </div>
 
           {/* Pricing Grid */}
+          <div className="mb-12">
+            <Image
+              src="/RealEstate Meta Tenticles.png"
+              alt="RealEstate Meta Tentacles"
+              width={350}
+              height={200}
+              className="mx-auto drop-shadow-xl"
+              priority
+            />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             {/* Starter Plan */}
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Starter</h3>
               <p className="text-4xl font-bold text-gray-900 mb-6">
-                $499<span className="text-lg text-gray-600 font-normal">/month</span>
+                $999<span className="text-lg text-gray-600 font-normal">/month</span>
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center text-gray-600">
@@ -71,7 +81,7 @@ export default function Pricing() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Professional</h3>
               <p className="text-4xl font-bold text-gray-900 mb-6">
-                $999<span className="text-lg text-gray-600 font-normal">/month</span>
+                $2999<span className="text-lg text-gray-600 font-normal">/month</span>
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center text-gray-600">

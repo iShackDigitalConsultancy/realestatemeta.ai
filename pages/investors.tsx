@@ -73,6 +73,16 @@ export default function Investors() {
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Schedule a meeting to learn more about our vision and investment opportunity.
             </p>
+            <div className="mb-8">
+              <Image
+                src="/RealEstate Meta Tenticles.png"
+                alt="RealEstate Meta Tentacles"
+                width={350}
+                height={200}
+                className="mx-auto drop-shadow-xl"
+                priority
+              />
+            </div>
             <a 
               href="https://zcal.co/wayne-berger"
               target="_blank"
